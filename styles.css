@@ -1,0 +1,16 @@
+@import "reset.css";
+
+.color__wrapper {
+  display: flexbox;
+}
+
+.color-card {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  border: 4px solid #000000;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+}
