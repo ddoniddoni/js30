@@ -11,3 +11,5 @@
 ## 04 Array Cardio one
 
 ## 05 Flex Panel Gallery
+
+## 06 Ajax Type Ahead
