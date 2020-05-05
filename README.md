@@ -6,6 +6,8 @@
 
 ## 02 Clock
 
+- <https://ddoniddoni.tistory.com/5>
+
 ## 03 CSS Variables
 
 ## 04 Array Cardio one
