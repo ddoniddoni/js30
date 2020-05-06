@@ -15,3 +15,7 @@
 ## 05 Flex Panel Gallery
 
 ## 06 Ajax Type Ahead
+
+## 07 Array Cardio two
+
+## 08 Fun with HTML Canvas
