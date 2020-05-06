@@ -10,6 +10,8 @@
 
 ## 03 CSS Variables
 
+- <https://ddoniddoni.tistory.com/6>
+
 ## 04 Array Cardio one
 
 ## 05 Flex Panel Gallery
@@ -19,3 +21,7 @@
 ## 07 Array Cardio two
 
 ## 08 Fun with HTML Canvas
+
+## 09 Dev Tools Domination
+
+## 10 Hold Shift and Check Checkboxes
