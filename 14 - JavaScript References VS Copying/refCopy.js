@@ -73,5 +73,4 @@ const ddoni = {
 console.log(ddoni);
 
 const dev = Object.assign({}, ddoni);
-
 const dev2 = JSON.parse(JSON.stringify(ddoni));
