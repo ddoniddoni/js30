@@ -35,3 +35,7 @@
 ## 13 Slide in on Scroll
 
 ## 14 JavaScript References VS Copy
+
+## 15 LocalStorage
+
+## 99 All Play (Change 01 DrumKit)
