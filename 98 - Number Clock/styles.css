@@ -1,0 +1,11 @@
+@import "reset.css";
+
+.wrapper {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.hours {
+  color: #000000;
+}
