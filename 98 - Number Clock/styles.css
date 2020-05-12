@@ -1,11 +1,15 @@
 @import "reset.css";
 
 .wrapper {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  min-width: 100vh;
+  height: 100vh;
 }
 
-.hours {
-  color: #000000;
+.clock {
+  color: #ffffff;
+  font-size: 40px;
 }
