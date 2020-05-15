@@ -38,6 +38,14 @@
 
 ## 15 LocalStorage
 
+## 16 Mouse Move Shadow
+
+## 17 Sort Without Articles
+
+## 18 Adding up Times With Reduce
+
+## 19 Webcam Fun
+
 ## 97 Login Form
 
 ## 98 Number Clock (Change 02 Clock)
