@@ -1,0 +1,14 @@
+{
+  "name": "21_geolocation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "geolocation.js",
+  "scripts": {
+    "start": "browser-sync start --server --files \"*.css, *.html, *.js\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
