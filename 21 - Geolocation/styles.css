@@ -1,4 +1,5 @@
-@import "reset.css" html {
+@import "reset.css";
+html {
   font-size: 100px;
 }
 
