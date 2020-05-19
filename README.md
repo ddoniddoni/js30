@@ -48,6 +48,14 @@
 
 ## 20 Speech Detection
 
+## 21 Geolocation
+
+## 22 Follow Along Link Highlighter
+
+## 23 Speech Synthesis
+
+## 24 Sticky Nav
+
 ## 97 Login Form
 
 ## 98 Number Clock (Change 02 Clock)
