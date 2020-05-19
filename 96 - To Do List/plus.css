@@ -1,0 +1,33 @@
+@import "reset.css";
+
+.body {
+  height: 100vh;
+}
+
+.wrapper {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo__save,
+.todo__cancle {
+  background-color: #000000;
+  border: 0;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.todo__cancle {
+  margin-left: 50px;
+}

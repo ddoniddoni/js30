@@ -1,0 +1,56 @@
+@import "reset.css";
+
+.header {
+  text-align: center;
+  height: 20vh;
+  background: url(https://images.unsplash.com/photo-1589803010853-e7219b32ff7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)
+    center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .header__text {
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 200;
+}
+
+.list {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 30vh;
+  height: 30vh;
+  background-color: red;
+  position: relative;
+}
+
+.list__do {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.list__time {
+  color: #ffffff;
+  right: 0;
+  bottom: 0;
+  margin: 20px 20px;
+  position: absolute;
+}
+
+.list__plus-btn {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  bottom: 0;
+  margin: 20px 20px;
+  border-radius: 50px;
+  border: 0px;
+  color: #ffffff;
+  background-color: #000000;
+  position: fixed;
+  cursor: pointer;
+}
