@@ -1,1 +1,17 @@
 @import "reset.css";
+
+.image {
+  height: 80vh;
+  background-color: red;
+}
+
+.answer {
+  height: 20vh;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 300;
+}
