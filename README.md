@@ -56,6 +56,8 @@
 
 ## 24 Sticky Nav
 
+## 96 Image Quiz
+
 ## 97 Login Form
 
 ## 98 Number Clock (Change 02 Clock)
