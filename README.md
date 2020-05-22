@@ -2,19 +2,11 @@
 
 ## 01 Drumkit
 
-- <https://ddoniddoni.tistory.com/3>
-
 ## 02 Clock
-
-- <https://ddoniddoni.tistory.com/5>
 
 ## 03 CSS Variables
 
-- <https://ddoniddoni.tistory.com/6>
-
 ## 04 Array Cardio one
-
-- <https://ddoniddoni.tistory.com/9>
 
 ## 05 Flex Panel Gallery
 
