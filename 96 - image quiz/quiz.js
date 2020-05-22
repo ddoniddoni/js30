@@ -20,14 +20,15 @@ const quizData = [
     answer: "멜론",
   },
 ];
+
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const image = document.querySelector(".image");
 const answer = document.querySelector(".answer");
 
 const recognition = new SpeechRecognition();
-recognition.interimResults = true;
-
+recognition.interimResults = false;
+// interimResults : 중간 결과를 반환할지(true) 안할지(false)
 let p = document.createElement("p");
 answer.appendChild(p);
 
@@ -38,20 +39,23 @@ function setSpeech(e) {
     .join("");
 
   p.textContent = transcript;
-
   if (e.results[0].isFinal) {
     // p = document.createElement("p");
     // answer.appendChild(p);
-    let i = Math.floor(Math.random() * 4);
-    console.log(i);
+
     if (p.textContent === "시작") {
+      let i = Math.floor(Math.random() * 4);
+      console.log(i);
       image.setAttribute("src", quizData[i].url);
       p.textContent = "";
     } else if (p.textContent === quizData[i].answer) {
       console.log("맞았어!");
+      let i = Math.floor(Math.random() * 4);
       image.setAttribute("src", quizData[i].url);
       console.log(i);
       p.textContent = "";
+    } else if (p.textContent !== quizData[i].answer) {
+      console.log("틀렸어!");
     }
   }
 }
