@@ -48,6 +48,12 @@
 
 ## 24 Sticky Nav
 
+## 25 Event Capture, Propagation, Bubbling
+
+## 26 Stripe Follow Along Nav
+
+## 27 Click and Drag
+
 ## 96 Image Quiz
 
 ## 97 Login Form
