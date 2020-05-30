@@ -1,5 +1,5 @@
-const container = document.querySelector(".container");
 const startBtn = document.querySelector(".start__button");
+const container = document.querySelector(".container-movie");
 
 let p;
 const MOVIE_DATA =
@@ -35,16 +35,19 @@ function getMovie() {
     })
     .then((json) => {
       for (let i = 0; i < json.movieListResult.movieList.length; i++) {
+        const wrapper = document.createElement("div");
         const movieName = document.createElement("div");
         const movieOpen = document.createElement("div");
+        wrapper.classList = "movie-wrapper";
         movieName.classList = "movie__name";
         movieOpen.classList = "movie__open";
         const movieN = json.movieListResult.movieList[i].movieNm;
         const movieO = json.movieListResult.movieList[i].openDt;
         movieName.textContent = movieN;
         movieOpen.textContent = movieO;
-        container.appendChild(movieName);
-        container.appendChild(movieOpen);
+        container.appendChild(wrapper);
+        wrapper.appendChild(movieName);
+        wrapper.appendChild(movieOpen);
       }
     });
 }
