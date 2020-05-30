@@ -1,4 +1,5 @@
 const container = document.querySelector(".container");
+const startBtn = document.querySelector(".start__button");
 
 let p;
 const MOVIE_DATA =
@@ -44,14 +45,15 @@ function getMovie() {
         movieOpen.textContent = movieO;
         container.appendChild(movieName);
         container.appendChild(movieOpen);
-        console.log(movieN);
       }
     });
 }
 
-function init() {}
+function startMovie() {
+  recognition.start();
+}
 
+startBtn.addEventListener("click", startMovie);
 recognition.addEventListener("result", setSpeech);
-recognition.addEventListener("end", recognition.start);
-recognition.start();
-init();
+// recognition.addEventListener("end", recognition.start);
+// recognition.start();
