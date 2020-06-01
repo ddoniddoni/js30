@@ -6,8 +6,7 @@ const MOVIE_DATA =
   "http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?";
 const API_KEY = "953230af24093ce531d0c6aef4dec491";
 
-window.SpeechRecognition =
-  window.SpeechRecognition || window.webkitSpeechRecognition;
+window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition();
 recognition.interimResults = false;
@@ -41,8 +40,8 @@ function getMovie() {
         wrapper.classList = "movie-wrapper";
         movieName.classList = "movie__name";
         movieOpen.classList = "movie__open";
-        const movieN = json.movieListResult.movieList[i].movieNm;
-        const movieO = json.movieListResult.movieList[i].openDt;
+        const movieN = `영화 이름 : ${json.movieListResult.movieList[i].movieNm}`;
+        const movieO = `개봉 날짜 : ${json.movieListResult.movieList[i].openDt}`;
         movieName.textContent = movieN;
         movieOpen.textContent = movieO;
         container.appendChild(wrapper);
