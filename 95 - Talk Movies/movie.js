@@ -1,5 +1,6 @@
 const startBtn = document.querySelector(".start__button");
 const container = document.querySelector(".container-movie");
+const movieSpeech = document.querySelector(".movie__speech");
 
 let p;
 const MOVIE_DATA =
@@ -17,6 +18,7 @@ function setSpeech(e) {
     .map((result) => result.transcript)
     .join("");
   p = transcript;
+  movieSpeech.textContent = `입력하신 단어 : ${p}`;
 
   if (e.results[0].isFinal) {
     // p = document.createElement("p");
@@ -35,12 +37,15 @@ function getMovie() {
     .then((json) => {
       for (let i = 0; i < json.movieListResult.movieList.length; i++) {
         let movieO = "";
+        let movieType = "";
         const wrapper = document.createElement("div");
         const movieName = document.createElement("div");
         const movieOpen = document.createElement("div");
+        const boxofficeType = document.createElement("div");
         wrapper.classList = "movie-wrapper";
         movieName.classList = "movie__name";
         movieOpen.classList = "movie__open";
+        boxofficeType.classList = "movie__type";
         const movieN = `영화 이름 : ${json.movieListResult.movieList[i].movieNm}`;
 
         if (json.movieListResult.movieList[i].openDt === "") {
@@ -52,11 +57,19 @@ function getMovie() {
           )}`;
         }
 
+        if (json.movieListResult.movieList[i].repGenreNm === "") {
+          movieType = "영화 종류 : 정확한 영화종류가 없습니다.";
+        } else {
+          movieType = `영화 종류 : ${json.movieListResult.movieList[i].repGenreNm}`;
+        }
+
         movieName.textContent = movieN;
         movieOpen.textContent = movieO;
+        boxofficeType.textContent = movieType;
         container.appendChild(wrapper);
         wrapper.appendChild(movieName);
         wrapper.appendChild(movieOpen);
+        wrapper.appendChild(boxofficeType);
       }
     });
 }
