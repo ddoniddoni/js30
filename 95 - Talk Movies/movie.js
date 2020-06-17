@@ -34,6 +34,7 @@ function getMovie() {
     })
     .then((json) => {
       for (let i = 0; i < json.movieListResult.movieList.length; i++) {
+        let movieO = "";
         const wrapper = document.createElement("div");
         const movieName = document.createElement("div");
         const movieOpen = document.createElement("div");
@@ -41,7 +42,16 @@ function getMovie() {
         movieName.classList = "movie__name";
         movieOpen.classList = "movie__open";
         const movieN = `영화 이름 : ${json.movieListResult.movieList[i].movieNm}`;
-        const movieO = `개봉 날짜 : ${json.movieListResult.movieList[i].openDt}`;
+
+        if (json.movieListResult.movieList[i].openDt === "") {
+          movieO = "개봉 날짜 : 정확한 개봉날짜가 없습니다.";
+        } else {
+          movieO = `개봉 날짜 : ${json.movieListResult.movieList[i].openDt.replace(
+            /(\d{4})(\d{2})(\d{2})/g,
+            "$1년 $2월 $3일"
+          )}`;
+        }
+
         movieName.textContent = movieN;
         movieOpen.textContent = movieO;
         container.appendChild(wrapper);
