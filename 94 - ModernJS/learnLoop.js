@@ -1,6 +1,6 @@
 const names = ["멍멍이", "야옹이", "멍뭉이"];
 for (let i = 0; i < names.length; i++) {
-  console.log(names[i]);
+  // console.log(names[i]);
 }
 
 let i = 0;
@@ -40,4 +40,17 @@ const sumOf = (numbers) => {
 };
 
 const result = sumOf([1, 2, 3, 4, 5]);
-console.log(result);
+// console.log(result);
+
+const biggerThanThree = (nums) => {
+  const array = [];
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] > 3) {
+      array.push(nums[i]);
+    }
+  }
+  return array;
+};
+
+const nums = [1, 2, 3, 4, 5, 6, 7];
+console.log(biggerThanThree(nums));
