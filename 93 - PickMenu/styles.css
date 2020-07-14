@@ -1,0 +1,145 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  font-family: sans-serif;
+  height: 100%;
+  background: dodgerblue;
+}
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.roullete {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid black;
+  position: relative;
+}
+.roullete.loop {
+  animation: rotation 7s ease-in-out forwards;
+}
+.fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  clip: rect(0px, 300px, 300px, 150px);
+}
+.fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  clip: rect(0px, 150px, 200px, 0px);
+  transform: rotate(45deg);
+}
+.fill_1::after {
+  background: lightcoral;
+}
+.fill_2 {
+  transform: rotate(90deg);
+}
+.fill_2::after {
+  background: lightgreen;
+}
+.fill_3 {
+  transform: rotate(135deg);
+}
+.fill_3::after {
+  background: lightseagreen;
+}
+.fill_4 {
+  transform: rotate(225deg);
+}
+.fill_4::after {
+  background: lightsalmon;
+}
+.fill_5 {
+  transform: rotate(270deg);
+}
+.fill_5::after {
+  background: lightpink;
+}
+.line {
+  width: 300px;
+  height: 3px;
+  background: black;
+  position: absolute;
+  top: 149px;
+  left: 0;
+}
+.line_1 {
+  transform: rotate(45deg);
+}
+.line_2 {
+  transform: rotate(90deg);
+}
+.line_3 {
+  transform: rotate(135deg);
+}
+.line_4 {
+  transform: rotate(180deg);
+}
+.content {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+  height: 280px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.content_1 {
+  transform: rotate(22deg);
+}
+.content_2 {
+  transform: rotate(67deg);
+}
+.content_3 {
+  transform: rotate(112deg);
+}
+.content_4 {
+  transform: rotate(157deg);
+}
+.content_5 {
+  transform: rotate(202deg);
+}
+.content_6 {
+  transform: rotate(247deg);
+}
+.content_7 {
+  transform: rotate(292deg);
+}
+.content_8 {
+  transform: rotate(337deg);
+}
+
+.trigger {
+  margin-top: 20px;
+  font-size: 30px;
+  border-radius: 15px;
+  padding: 10px 20px;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(7045deg);
+  }
+}
