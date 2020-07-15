@@ -1,4 +1,4 @@
-let lyric = "a b";
+let lyric = "안 녕 하 세 요 반 갑 습 니 다 또 만 나 요";
 let words = {};
 let words_attr = [];
 string_handle(lyric);
@@ -6,12 +6,11 @@ string_handle(lyric);
 const canvas = document.querySelector(".canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
 if (canvas.getContext) {
   const c = canvas.getContext("2d"),
     w = canvas.width,
     h = canvas.height;
-
+  console.log(w, h);
   c.strokeStyle = "red";
   c.fillStyle = "white";
   c.lineWidth = 5;
