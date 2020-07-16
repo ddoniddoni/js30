@@ -16,7 +16,7 @@ const onClick = (e) => {
   input_text.value = "";
 };
 
-input_btn.addEventListener("click", onClick);
+// input_btn.addEventListener("click", onClick);
 if (canvas.getContext) {
   const c = canvas.getContext("2d"),
     w = canvas.width,
